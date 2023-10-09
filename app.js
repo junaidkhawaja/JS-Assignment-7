@@ -1,5 +1,3 @@
-// Q1
-
 function q1() {
     alert("Question number 1 clicked!");
 }

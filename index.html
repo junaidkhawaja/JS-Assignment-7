@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment 07</title>
+    <style>
+    #para1 {
+        color:red;
+        background:beige;
+    }
+    .regform input, .regform label {
+        width:250px;
+        display: inline-block;
+    }
+    </style>
+</head>
+<body>
+    <h2>Chapter 46, 48 (Events)</h2>
+
+    <h3>Q1</h3>
+    <button onclick="q1();">Press This</button>
+    <h3>Q2</h3>
+    <button onclick="q2();">Remove Other Button</button>
+    <button id="otherButton">Other Button</button>
+    <h3>Q3</h3>
+    <a onmouseover="this.style.color = 'green';" onmouseout="this.style.color = 'red';" style="font-weight:bold;" href="#">A Link</a>
+    <br /><br />
+    <div style="background:red;color:white;font-weight:bold;font-size:32px;height:900px;">Scroll down to see the fourth questions</div>
+    <h3>Q4</h3>
+    <button onclick="q4();">Scroll to Top</button>
+    <h3>Q5</h3>
+    <button onclick="q5();">Play Sound</button>
+    <audio id="sound" src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"></audio>
+    <h3>Q6</h3>
+    <button onclick="q6();">Open Google in New Window</button>
+    <h3>Q7</h3>
+    <button onclick="q7();">Open an Alert</button>
+    <h3>Q8</h3>
+    <button onmouseover="this.style.background = 'red';this.style.color = 'white'" onmouseout="this.style.background = 'green'">Change Color</button>
+    <h3>Q9</h3>
+    <button onclick="q9();">Play Sound</button>
+    <audio id="sound2" src="https://file-examples.com/storage/feaade38c1651bd01984236/2017/11/file_example_MP3_700KB.mp3"></audio>
+    <h3>Q10</h3>
+    <button onmouseover="q10()">See Alert on Hover</button>
+    <h3>Q11</h3>
+    <button onmouseout="this.style.display = 'none';">Hides on mouseout</button>
+    <h3>Q12</h3>
+    <button onclick="q12();">Open Google</button>
+    <h2>Chapter 49, 50 (Reading and Setting Field Values)</h2>
+    <h3>Q1</h3>
+    <input type="text" id="q13" name="Add Some Text">
+    <button onclick="q13();">See Console for Value</button>
+    <h3>Q2</h3>
+    <input type="checkbox" name="Agreement" id="agreement" value="Yes">Yes
+    <button onclick="q14();">See Value</button>
+    <h3>Q3</h3>
+    <select id="country">
+        <option value="India">India</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Iran">Iran</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="China">China</option>
+    </select>
+    <button onclick="q15();">See Value</button>
+    <h3>Q4</h3>
+    <p id="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore necessitatibus qui tenetur error nobis, corrupti modi perferendis hic ut aliquam!</p>
+    <button onclick="q16();">Add ID to Paragraph</button>
+    <h3>Q5</h3>
+    <label>Select your Marital Status</label>
+    <select name="maritalStatus" id="maritalstatus">
+        <option value="married">Married</option>
+        <option value="single">Single</option>
+    </select>
+    <button onclick="q17();">Check Availability</button>
+    <input type="text" id="status" name="availability" />
+    <h3>Q6</h3>
+    <input id="string" name="Enter some value" />
+    <button onclick="q18();">Submit</button>
+    <h3>Q7</h3>
+    <div class="regform">
+    <h4>Registration Form</h4>
+    <label for="firstName">First Name</label>
+    <input type="text" id="firstName" name="First Name" placeholder="First Name" /><br /><br />
+    <label for="lastName">Last Name</label>
+    <input type="text" id="lastName" name="Last Name" placeholder="Last Name" /><br /><br />
+    <label for="email">Email</label>
+    <input type="email" id="email" name="Email" placeholder="Email" /><br /><br />
+    <label for="password">Password</label>
+    <input type="password" id="password" name="Password" /><br /><br />
+    <button onclick="q19();">Register</button><br />
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
